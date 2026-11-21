@@ -283,7 +283,7 @@ function fit(){
 }
 function drawMap(list){
   if (!window.L) return;
-  if (!map){ map = L.map("map", {scrollWheelZoom: false, zoomControl: true}); tiles(map); map.on("focus", function(){ map.scrollWheelZoom.enable(); }); }
+  if (!map){ map = L.map("map", {scrollWheelZoom: false, zoomControl: true, zoomSnap: 0.25}); tiles(map); map.on("focus", function(){ map.scrollWheelZoom.enable(); }); }
   markers.forEach(function(m){ m.remove(); }); markers = [];
   list.forEach(function(x){
     var icon = L.divIcon({className: "", html: '<span class="pin" data-id="' + x.id + '">' + (x.nabidka === "prodej" ? short(x.cena) : num(x.cena)) + '</span>', iconSize: null});
