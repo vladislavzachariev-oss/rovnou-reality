@@ -149,7 +149,7 @@ function home(){
   '</div>' +
 
   '<div class="band rv"><div><h2>Kolik ušetříte, když nekupujete přes realitku</h2><p>U bytu za 6' + NB + 'milionů si běžná realitní kancelář řekne o 3 až 5' + NB + '% z ceny. Ty peníze zaplatíte vy, i když je to schované v ceně bytu.</p></div>' +
-    '<div class="cmp"><div class="cmp-r"><span>Realitní kancelář (4' + NB + '%)</span><b>240' + NB + '000' + NB + 'Kč</b></div><div class="cmp-r"><span>Realitka s nižší provizí (3' + NB + '%)</span><b>180' + NB + '000' + NB + 'Kč</b></div><div class="cmp-r us"><span>Rovnou od majitele</span><b>0' + NB + 'Kč</b></div></div></div>' +
+    '<div class="cmp"><div class="cmp-r"><span>Realitní kancelář (4' + NB + '%)</span><b>240' + NB + '000' + NB + 'Kč</b></div><div class="cmp-r"><span>Realitka s nižší provizí (3' + NB + '%)</span><b>180' + NB + '000' + NB + 'Kč</b></div><div class="cmp-r us"><span>StopRK, přímo od majitele</span><b>0' + NB + 'Kč</b></div></div></div>' +
   '</div></section>';
 
   bindSearch();
