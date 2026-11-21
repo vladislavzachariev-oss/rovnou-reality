@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rovnou – byty a domy přímo od majitelů</title>
+<meta name="description" content="Byty a domy na prodej a k pronájmu přímo od majitelů, bez provize realitní kanceláře. Mapa, hypoteční kalkulačka a odhad ceny zdarma.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232340d0'/%3E%3Cpath d='M9 23V14l7-5 7 5v9h-5v-5h-4v5z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="img/26.webp">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#/" class="logo" aria-label="Rovnou – úvod">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M9 23V14l7-5 7 5v9h-5v-5h-4v5z"/></svg>
+      <span>rovnou</span>
+    </a>
+    <nav class="nav" aria-label="Hlavní">
+      <a href="#/nabidka?nabidka=prodej" data-nav="prodej">Koupit</a>
+      <a href="#/nabidka?nabidka=pronajem" data-nav="pronajem">Pronajmout</a>
+      <a href="#/majitele" data-nav="majitele">Prodat nebo pronajmout</a>
+      <a href="#/majitele#odhad" data-nav="odhad">Odhad ceny</a>
+    </nav>
+    <div class="top-act">
+      <a href="#/oblibene" class="fav-link" aria-label="Uložené inzeráty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>
+        <span class="fav-count" hidden>0</span>
+      </a>
+      <a href="#/majitele#vlozit" class="btn btn-dark btn-sm hide-s">Vložit inzerát</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <a href="#/" class="logo logo-inv"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M9 23V14l7-5 7 5v9h-5v-5h-4v5z"/></svg><span>rovnou</span></a>
+      <p>Byty a domy přímo od lidí, kteří v&nbsp;nich bydlí. Bez provize a&nbsp;bez prostředníka.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Hledám bydlení</h4>
+      <a href="#/nabidka?nabidka=prodej&typ=byt">Byty na prodej</a>
+      <a href="#/nabidka?nabidka=prodej&typ=dum">Domy na prodej</a>
+      <a href="#/nabidka?nabidka=pronajem">Pronájmy</a>
+      <a href="#/oblibene">Uložené inzeráty</a>
+    </div>
+    <div class="foot-col">
+      <h4>Jsem majitel</h4>
+      <a href="#/majitele">Jak prodat bez realitky</a>
+      <a href="#/majitele#odhad">Odhad ceny zdarma</a>
+      <a href="#/majitele#cenik">Ceník inzerce</a>
+    </div>
+    <div class="foot-col">
+      <h4>Kontakt</h4>
+      <span>Po–Pá 8:00–17:00</span>
+      <span>info@rovnou.example</span>
+    </div>
+  </div>
+  <div class="wrap foot-note">
+    <p>Ukázkový projekt, který navrhl a&nbsp;postavil <a href="https://whytelynx.cz" target="_blank" rel="noopener">Whyte Lynx</a> (Vladislav Zachariev). Inzeráty a&nbsp;ceny jsou smyšlené, fotografie jsou z&nbsp;<a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, mapa © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="data.js" defer></script>
+<script src="app.js" defer></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5ae95e24cc924a0e84e28a82659ff3dc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
